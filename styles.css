@@ -1,3 +1,6 @@
+body {
+    padding: 50px;
+}
 #calc {
     border: solid black 5px;
     width: 450px;
@@ -8,9 +11,14 @@
     grid-template-columns: repeat(4, 103px);
     grid-template-rows: repeat(5, 112px);
     justify-content: space-evenly;
+    background-color: darkgray;
+    font-size: 50px;
+    font-family: sans-serif;
+    font-weight: 500;
 }
 
 #display {
+    background-color: white;
     grid-column: 1/5;
     display: flex;
     justify-content: right;
@@ -22,19 +30,24 @@
 }
 
 button {
-    border: solid black 2px;
+    border: solid black 5px;
     margin: 5px;
-    background-color: white;
-    font-size: 30px;
-    font-family: sans-serif;
     max-width: 100px;
     display: block;
+    font-size: 50px;
+    font-family: sans-serif;
+    font-weight: 1000;
 }
 
 button:active {
     background-color: darkgray;
 }
-
+#AC:active {
+    background-color: darkgray;
+}
+#eq:active {
+    background-color: darkgray;
+}
 .digit {
     background-color: lightcyan;
 }

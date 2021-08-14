@@ -9,16 +9,16 @@ let calculation = '';
 display.textContent = displayVal;
 
 function add(a, b) {
-    return a+b;
+    return round(a+b);
 }
 function sub(a, b) {
-    return a-b;
+    return round(a-b);
 }
 function mult(a, b) {
-    return a*b;
+    return round(a*b);
 }
 function div(a, b) {
-    return a/b;
+    return round(a/b);
 }
 function operate(a, b, op) {
     switch (op) {
@@ -27,6 +27,9 @@ function operate(a, b, op) {
         case '*': return String(mult(a, b));
         case '/': return String(div(a, b));
     }
+}
+function round(n) {
+    return Math.round(n*100000000000)/100000000000;
 }
 function clear() {
     displayVal = '';

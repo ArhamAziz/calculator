@@ -1,0 +1,36 @@
+#calc {
+    border: solid black 5px;
+    width: 450px;
+    height: 600px;
+    margin: auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 103px);
+    grid-template-rows: repeat(5, 112px);
+    justify-content: space-evenly;
+}
+
+#display {
+    grid-column: 1/5;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    font-size: 60px;
+    font-family: monospace;
+    border: solid black 5px;
+    height: 80px;
+}
+
+button {
+    border: solid black 2px;
+    margin: 5px;
+    background-color: white;
+    font-size: 30px;
+    font-family: sans-serif;
+    max-width: 100px;
+    display: block;
+}
+
+button:active {
+    background-color: darkred;
+}
